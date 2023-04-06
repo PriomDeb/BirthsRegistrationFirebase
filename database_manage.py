@@ -35,7 +35,7 @@ def get_last_child_id():
     ids = db.child("births").shallow().get().val()
 
     if ids:
-        last_id = [i for i in db.child("births").shallow().get().val()]
+        last_id = [int(i) for i in db.child("births").shallow().get().val()]
         last_id.sort()
         return last_id[-1]
     else:
