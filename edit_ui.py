@@ -26,7 +26,7 @@ def edit_information(user_name=""):
     global root
     root = Tk()
     version = "1.1"
-    root.title(f"EZ Translation v{version}")
+    root.title(f"Update info of Child ID: {id} Name: {fetched_data['name']}")
 
     window_x = 800 * 2 - 300
     window_y = 540 * 2 - 300
@@ -44,9 +44,9 @@ def edit_information(user_name=""):
     root.minsize(window_x, window_y)
     root.maxsize(window_x, window_y)
 
-    # root.iconbitmap("ui/ezTranslationIcon.ico")
+    root.iconbitmap("ui/birth_registration_icon.ico")
 
-    main_ui = Image.open("ui/registration_form.png")
+    main_ui = Image.open("ui/update_information_ui.png")
     resize_main_ui = main_ui.resize((window_x, window_y))
     resized_main_ui = ImageTk.PhotoImage(resize_main_ui)
 

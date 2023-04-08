@@ -35,7 +35,7 @@ def registrationUI(user_name=""):
     root.minsize(window_x, window_y)
     root.maxsize(window_x, window_y)
 
-    # root.iconbitmap("ui/ezTranslationIcon.ico")
+    root.iconbitmap("ui/birth_registration_icon.ico")
 
     main_ui = Image.open("ui/registration_form.png")
     resize_main_ui = main_ui.resize((window_x, window_y))

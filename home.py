@@ -37,10 +37,10 @@ def home_ui(user_name=""):
 
     # Constant Windows size
     root.geometry(window_string)
-    # root.minsize(window_x, window_y)
-    # root.maxsize(window_x, window_y)
+    root.minsize(window_x, window_y)
+    root.maxsize(window_x, window_y)
 
-    # root.iconbitmap("ui/ezTranslationIcon.ico")
+    root.iconbitmap("ui/birth_registration_icon.ico")
 
     main_ui = Image.open("ui/home_ui.png")
     resize_main_ui = main_ui.resize((window_x, window_y))
@@ -113,7 +113,7 @@ def home_ui(user_name=""):
         guardian_contact_number.pack(side="top", anchor="w")
 
         # Load the edit icon image
-        # edit_icon = tk.PhotoImage(file="ui/edit.png")
+        edit_icon = tk.PhotoImage(file="ui/edit.png")
 
         tk.Button(card, text="Edit", compound="left",
                   command=lambda i=i: card_buttons(i), borderwidth=1, highlightthickness=0).pack(side=RIGHT)
