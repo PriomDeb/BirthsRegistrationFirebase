@@ -91,7 +91,7 @@ def view_information(user_name=""):
 
     Label(text=f"Child ID: {id}", background="white", font=("Quicksand Bold", 14)).place(x=100, y=70)
 
-    def upload_data():
+    def generate_birth_cirtificates():
         status = birth_certificate_generator.generate_birth_certificate(name=fetched_data['name'],
                                                                         father_name=fetched_data['father_name'],
                                                                         mother_name=fetched_data['mother_name'],
@@ -118,16 +118,7 @@ def view_information(user_name=""):
 
         if 614 <= mouse_x <= 904 and 570 <= mouse_y <= 614:
             print("Birth Certificate")
-            upload_data()
-            # upload_data()
-            # print(name.get("1.0", "end-1c"))
-            # print(date_of_birth.get("1.0", "end-1c"))
-            # print(address.get("1.0", "end-1c"))
-            # print(birth_location.get("1.0", "end-1c"))
-            # print(father_name.get("1.0", "end-1c"))
-            # print(mother_name.get("1.0", "end-1c"))
-            # print(guardian_contact_number.get("1.0", "end-1c"))
-            # print(guardian_nid.get("1.0", "end-1c"))
+            generate_birth_cirtificates()
         elif 770 <= mouse_x <= 780 and 20 <= mouse_y <= 30:
             print("Exit")
             # root.destroy()

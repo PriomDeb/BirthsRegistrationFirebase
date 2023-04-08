@@ -667,6 +667,10 @@
   ('bdb',
    'C:\\Users\\priom\\AppData\\Local\\Programs\\Python\\Python39\\lib\\bdb.py',
    'PYMODULE'),
+  ('birth_certificate_generator',
+   'D:\\GitHub Repo\\GitHub Public Repo\\My Open Source '
+   'Projects\\Python\\BirthsRegistrationFirebase\\birth_certificate_generator.py',
+   'PYMODULE'),
   ('bisect',
    'C:\\Users\\priom\\AppData\\Local\\Programs\\Python\\Python39\\lib\\bisect.py',
    'PYMODULE'),
@@ -1970,6 +1974,470 @@
    'PYMODULE'),
   ('numbers',
    'C:\\Users\\priom\\AppData\\Local\\Programs\\Python\\Python39\\lib\\numbers.py',
+   'PYMODULE'),
+  ('numpy',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\__init__.py',
+   'PYMODULE'),
+  ('numpy.__config__',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\__config__.py',
+   'PYMODULE'),
+  ('numpy._distributor_init',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\_distributor_init.py',
+   'PYMODULE'),
+  ('numpy._globals',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\_globals.py',
+   'PYMODULE'),
+  ('numpy._pytesttester',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\_pytesttester.py',
+   'PYMODULE'),
+  ('numpy._typing',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\_typing\\__init__.py',
+   'PYMODULE'),
+  ('numpy._typing._add_docstring',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\_typing\\_add_docstring.py',
+   'PYMODULE'),
+  ('numpy._typing._array_like',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\_typing\\_array_like.py',
+   'PYMODULE'),
+  ('numpy._typing._char_codes',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\_typing\\_char_codes.py',
+   'PYMODULE'),
+  ('numpy._typing._dtype_like',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\_typing\\_dtype_like.py',
+   'PYMODULE'),
+  ('numpy._typing._generic_alias',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\_typing\\_generic_alias.py',
+   'PYMODULE'),
+  ('numpy._typing._nbit',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\_typing\\_nbit.py',
+   'PYMODULE'),
+  ('numpy._typing._nested_sequence',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\_typing\\_nested_sequence.py',
+   'PYMODULE'),
+  ('numpy._typing._scalars',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\_typing\\_scalars.py',
+   'PYMODULE'),
+  ('numpy._typing._shape',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\_typing\\_shape.py',
+   'PYMODULE'),
+  ('numpy._version',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\_version.py',
+   'PYMODULE'),
+  ('numpy.array_api',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\array_api\\__init__.py',
+   'PYMODULE'),
+  ('numpy.array_api._array_object',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\array_api\\_array_object.py',
+   'PYMODULE'),
+  ('numpy.array_api._constants',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\array_api\\_constants.py',
+   'PYMODULE'),
+  ('numpy.array_api._creation_functions',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\array_api\\_creation_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api._data_type_functions',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\array_api\\_data_type_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api._dtypes',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\array_api\\_dtypes.py',
+   'PYMODULE'),
+  ('numpy.array_api._elementwise_functions',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\array_api\\_elementwise_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api._manipulation_functions',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\array_api\\_manipulation_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api._searching_functions',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\array_api\\_searching_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api._set_functions',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\array_api\\_set_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api._sorting_functions',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\array_api\\_sorting_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api._statistical_functions',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\array_api\\_statistical_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api._typing',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\array_api\\_typing.py',
+   'PYMODULE'),
+  ('numpy.array_api._utility_functions',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\array_api\\_utility_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api.linalg',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\array_api\\linalg.py',
+   'PYMODULE'),
+  ('numpy.compat',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\compat\\__init__.py',
+   'PYMODULE'),
+  ('numpy.compat._inspect',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\compat\\_inspect.py',
+   'PYMODULE'),
+  ('numpy.compat.py3k',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\compat\\py3k.py',
+   'PYMODULE'),
+  ('numpy.core',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\__init__.py',
+   'PYMODULE'),
+  ('numpy.core._add_newdocs',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\_add_newdocs.py',
+   'PYMODULE'),
+  ('numpy.core._add_newdocs_scalars',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\_add_newdocs_scalars.py',
+   'PYMODULE'),
+  ('numpy.core._asarray',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\_asarray.py',
+   'PYMODULE'),
+  ('numpy.core._dtype',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\_dtype.py',
+   'PYMODULE'),
+  ('numpy.core._dtype_ctypes',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\_dtype_ctypes.py',
+   'PYMODULE'),
+  ('numpy.core._exceptions',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\_exceptions.py',
+   'PYMODULE'),
+  ('numpy.core._internal',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\_internal.py',
+   'PYMODULE'),
+  ('numpy.core._machar',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\_machar.py',
+   'PYMODULE'),
+  ('numpy.core._methods',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\_methods.py',
+   'PYMODULE'),
+  ('numpy.core._string_helpers',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\_string_helpers.py',
+   'PYMODULE'),
+  ('numpy.core._type_aliases',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\_type_aliases.py',
+   'PYMODULE'),
+  ('numpy.core._ufunc_config',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\_ufunc_config.py',
+   'PYMODULE'),
+  ('numpy.core.arrayprint',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\arrayprint.py',
+   'PYMODULE'),
+  ('numpy.core.defchararray',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\defchararray.py',
+   'PYMODULE'),
+  ('numpy.core.einsumfunc',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\einsumfunc.py',
+   'PYMODULE'),
+  ('numpy.core.fromnumeric',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\fromnumeric.py',
+   'PYMODULE'),
+  ('numpy.core.function_base',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\function_base.py',
+   'PYMODULE'),
+  ('numpy.core.getlimits',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\getlimits.py',
+   'PYMODULE'),
+  ('numpy.core.memmap',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\memmap.py',
+   'PYMODULE'),
+  ('numpy.core.multiarray',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\multiarray.py',
+   'PYMODULE'),
+  ('numpy.core.numeric',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\numeric.py',
+   'PYMODULE'),
+  ('numpy.core.numerictypes',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\numerictypes.py',
+   'PYMODULE'),
+  ('numpy.core.overrides',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\overrides.py',
+   'PYMODULE'),
+  ('numpy.core.records',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\records.py',
+   'PYMODULE'),
+  ('numpy.core.shape_base',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\shape_base.py',
+   'PYMODULE'),
+  ('numpy.core.umath',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\core\\umath.py',
+   'PYMODULE'),
+  ('numpy.ctypeslib',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\ctypeslib.py',
+   'PYMODULE'),
+  ('numpy.fft',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\fft\\__init__.py',
+   'PYMODULE'),
+  ('numpy.fft._pocketfft',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\fft\\_pocketfft.py',
+   'PYMODULE'),
+  ('numpy.fft.helper',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\fft\\helper.py',
+   'PYMODULE'),
+  ('numpy.lib',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.lib._datasource',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\_datasource.py',
+   'PYMODULE'),
+  ('numpy.lib._iotools',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\_iotools.py',
+   'PYMODULE'),
+  ('numpy.lib._version',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\_version.py',
+   'PYMODULE'),
+  ('numpy.lib.arraypad',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\arraypad.py',
+   'PYMODULE'),
+  ('numpy.lib.arraysetops',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\arraysetops.py',
+   'PYMODULE'),
+  ('numpy.lib.arrayterator',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\arrayterator.py',
+   'PYMODULE'),
+  ('numpy.lib.format',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\format.py',
+   'PYMODULE'),
+  ('numpy.lib.function_base',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\function_base.py',
+   'PYMODULE'),
+  ('numpy.lib.histograms',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\histograms.py',
+   'PYMODULE'),
+  ('numpy.lib.index_tricks',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\index_tricks.py',
+   'PYMODULE'),
+  ('numpy.lib.mixins',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\mixins.py',
+   'PYMODULE'),
+  ('numpy.lib.nanfunctions',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\nanfunctions.py',
+   'PYMODULE'),
+  ('numpy.lib.npyio',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\npyio.py',
+   'PYMODULE'),
+  ('numpy.lib.polynomial',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\polynomial.py',
+   'PYMODULE'),
+  ('numpy.lib.scimath',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\scimath.py',
+   'PYMODULE'),
+  ('numpy.lib.shape_base',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\shape_base.py',
+   'PYMODULE'),
+  ('numpy.lib.stride_tricks',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\stride_tricks.py',
+   'PYMODULE'),
+  ('numpy.lib.twodim_base',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\twodim_base.py',
+   'PYMODULE'),
+  ('numpy.lib.type_check',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\type_check.py',
+   'PYMODULE'),
+  ('numpy.lib.ufunclike',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\ufunclike.py',
+   'PYMODULE'),
+  ('numpy.lib.utils',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\lib\\utils.py',
+   'PYMODULE'),
+  ('numpy.linalg',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\linalg\\__init__.py',
+   'PYMODULE'),
+  ('numpy.linalg.linalg',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\linalg\\linalg.py',
+   'PYMODULE'),
+  ('numpy.ma',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\ma\\__init__.py',
+   'PYMODULE'),
+  ('numpy.ma.core',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\ma\\core.py',
+   'PYMODULE'),
+  ('numpy.ma.extras',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\ma\\extras.py',
+   'PYMODULE'),
+  ('numpy.ma.mrecords',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\ma\\mrecords.py',
+   'PYMODULE'),
+  ('numpy.matrixlib',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\matrixlib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.matrixlib.defmatrix',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\matrixlib\\defmatrix.py',
+   'PYMODULE'),
+  ('numpy.polynomial',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\polynomial\\__init__.py',
+   'PYMODULE'),
+  ('numpy.polynomial._polybase',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\polynomial\\_polybase.py',
+   'PYMODULE'),
+  ('numpy.polynomial.chebyshev',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\polynomial\\chebyshev.py',
+   'PYMODULE'),
+  ('numpy.polynomial.hermite',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\polynomial\\hermite.py',
+   'PYMODULE'),
+  ('numpy.polynomial.hermite_e',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\polynomial\\hermite_e.py',
+   'PYMODULE'),
+  ('numpy.polynomial.laguerre',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\polynomial\\laguerre.py',
+   'PYMODULE'),
+  ('numpy.polynomial.legendre',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\polynomial\\legendre.py',
+   'PYMODULE'),
+  ('numpy.polynomial.polynomial',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\polynomial\\polynomial.py',
+   'PYMODULE'),
+  ('numpy.polynomial.polyutils',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\polynomial\\polyutils.py',
+   'PYMODULE'),
+  ('numpy.random',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\random\\__init__.py',
+   'PYMODULE'),
+  ('numpy.random._pickle',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\random\\_pickle.py',
+   'PYMODULE'),
+  ('numpy.testing',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\testing\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing._private',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\testing\\_private\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing._private.decorators',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\testing\\_private\\decorators.py',
+   'PYMODULE'),
+  ('numpy.testing._private.extbuild',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\testing\\_private\\extbuild.py',
+   'PYMODULE'),
+  ('numpy.testing._private.noseclasses',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\testing\\_private\\noseclasses.py',
+   'PYMODULE'),
+  ('numpy.testing._private.nosetester',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\testing\\_private\\nosetester.py',
+   'PYMODULE'),
+  ('numpy.testing._private.parameterized',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\testing\\_private\\parameterized.py',
+   'PYMODULE'),
+  ('numpy.testing._private.utils',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\testing\\_private\\utils.py',
+   'PYMODULE'),
+  ('numpy.typing',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\typing\\__init__.py',
+   'PYMODULE'),
+  ('numpy.version',
+   'd:\\github repo\\github public repo\\my open source '
+   'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\numpy\\version.py',
    'PYMODULE'),
   ('oauth2client',
    'd:\\github repo\\github public repo\\my open source '
@@ -4278,6 +4746,10 @@
    'PYMODULE'),
   ('uuid',
    'C:\\Users\\priom\\AppData\\Local\\Programs\\Python\\Python39\\lib\\uuid.py',
+   'PYMODULE'),
+  ('view_information',
+   'D:\\GitHub Repo\\GitHub Public Repo\\My Open Source '
+   'Projects\\Python\\BirthsRegistrationFirebase\\view_information.py',
    'PYMODULE'),
   ('wave',
    'C:\\Users\\priom\\AppData\\Local\\Programs\\Python\\Python39\\lib\\wave.py',
