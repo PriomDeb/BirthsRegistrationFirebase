@@ -81,7 +81,7 @@ def home_ui(user_name=""):
             {"name": "Tom", "Birth": "02 January, 2023"},
             {"name": "Robert", "Birth": "-------------"},
             ]
-    
+
     # create the container frame for the cards
     container_frame = Frame(root, background="white")
     container_frame.place(relx=0.5,
