@@ -47,12 +47,12 @@ class ImageViewer:
         self.open_folder_button.pack(side="bottom")
 
     def open_folder(self):
-        os.startfile(os.path.abspath("ui"))
+        os.startfile(os.path.abspath("firebase_images"))
 
     def show_image(self):
         # Load the image and scale it to fit in the container
         image_filename = self.image_filenames[self.current_index]
-        image = Image.open(os.path.join("ui", image_filename))
+        image = Image.open(os.path.join("firebase_images", image_filename))
         width, height = image.size
         if width > height:
             new_width = self.width

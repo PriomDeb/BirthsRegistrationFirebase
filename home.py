@@ -13,6 +13,9 @@ import database_manage
 import joblib
 import registration_ui
 import edit_ui
+import images
+import storage_manage
+import os
 
 # Adding fonts
 pyglet.font.add_file("fonts/Quicksand_Bold.otf")
@@ -135,6 +138,10 @@ def home_ui(user_name=""):
         if 14 <= mouse_x <= 272 and 246 <= mouse_y <= 356:
             root.destroy()
             registration_ui.call()
+        elif 14 <= mouse_x <= 272 and 382 <= mouse_y <= 488:
+            print("Downloading")
+            storage_manage.call()
+            os.startfile(os.path.abspath("firebase_images"))
         elif 770 <= mouse_x <= 780 and 20 <= mouse_y <= 30:
             print("Exit")
             # root.destroy()
