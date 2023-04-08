@@ -231,7 +231,7 @@ if __name__ == "__main__":
 # authentication_to_enter_the_app()
 
 
-# pyinstaller --onefile --icon=ezTranslationIcon.ico -w eztranslationv1_1.py
+# pyinstaller --onefile --icon=birth_registration_icon.ico -w app.py
 
 
 # translated_text.delete("1.0", END)
