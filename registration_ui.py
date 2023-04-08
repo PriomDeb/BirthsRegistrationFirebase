@@ -168,36 +168,7 @@ def registrationUI(user_name=""):
     if len(user_name) > 32:
         font_size = 8
 
-    display_name = f"Hi, {user_name}!"
-    # draw_display_name = Label(root,
-    #                           text=display_name,
-    #                           border=0,
-    #                           font=("Quicksand Bold", font_size),
-    #                           foreground="orange",
-    #                           )
-    # draw_display_name.place(x=230,
-    #                         y=40,
-    #                         width=302,
-    #                         height=40
-    #                         )
-    # bg_canvas.create_text(374,
-    #                       58,
-    #                       text=display_name,
-    #                       font=("Quicksand Bold", font_size),
-    #                       fill="orange",
-    #                       justify=CENTER,
-    #                       )
-
-    # Log out
-    # def logout():
-    #     try:
-    #         user = PriomFirebaseAuthenticationAPI()
-    #         root.destroy()
-    #         user.logout()
-    #         authentication_to_enter_the_app()
-    #     except Exception:
-    #         print("Failed Log out")
-    #         logging.exception(Exception)
+   
 
     # Run App
     root.mainloop()
