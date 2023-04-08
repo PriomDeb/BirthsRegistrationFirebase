@@ -145,22 +145,22 @@ def home_ui(user_name=""):
             # root.state(newstate="iconic")
             print("Minimize Window")
         elif 20 <= mouse_x <= 306 and 742 <= mouse_y <= 754:
-            # webbrowser.open_new(urls["diskaou apps"])
+            webbrowser.open_new(urls["diskaou apps"])
             print("Diskaou Apps")
         elif 974 <= mouse_x <= 1010 and 730 <= mouse_y <= 760:
-            # webbrowser.open_new(urls["facebook"])
+            webbrowser.open_new(urls["facebook"])
             print("Facebook")
         elif 1040 <= mouse_x <= 1076 and 730 <= mouse_y <= 760:
-            # webbrowser.open_new(urls["instagram"])
+            webbrowser.open_new(urls["instagram"])
             print("Instagram")
         elif 1106 <= mouse_x <= 1140 and 730 <= mouse_y <= 760:
-            # webbrowser.open_new(urls["website"])
+            webbrowser.open_new(urls["website"])
             print("Website")
         elif 1170 <= mouse_x <= 1206 and 730 <= mouse_y <= 760:
-            # webbrowser.open_new(urls["linkedin"])
+            webbrowser.open_new(urls["linkedin"])
             print("Linkedin")
         elif 1236 <= mouse_x <= 1272 and 730 <= mouse_y <= 760:
-            # webbrowser.open_new(urls["email"])
+            webbrowser.open_new(urls["email"])
             print("Email")
 
     root.bind("<Button 1>", mousePosition)

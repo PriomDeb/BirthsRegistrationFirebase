@@ -17,7 +17,7 @@ def registrationUI(user_name=""):
     global root
     root = Tk()
     version = "1.1"
-    root.title(f"EZ Translation v{version}")
+    root.title(f"Add New Registration v{version} v{version}")
 
     window_x = 800 * 2 - 300
     window_y = 540 * 2 - 300
@@ -130,22 +130,22 @@ def registrationUI(user_name=""):
             # root.state(newstate="iconic")
             print("Minimize Window")
         elif 20 <= mouse_x <= 306 and 742 <= mouse_y <= 754:
-            # webbrowser.open_new(urls["diskaou apps"])
+            webbrowser.open_new(urls["diskaou apps"])
             print("Diskaou Apps")
         elif 974 <= mouse_x <= 1010 and 730 <= mouse_y <= 760:
-            # webbrowser.open_new(urls["facebook"])
+            webbrowser.open_new(urls["facebook"])
             print("Facebook")
         elif 1040 <= mouse_x <= 1076 and 730 <= mouse_y <= 760:
-            # webbrowser.open_new(urls["instagram"])
+            webbrowser.open_new(urls["instagram"])
             print("Instagram")
         elif 1106 <= mouse_x <= 1140 and 730 <= mouse_y <= 760:
-            # webbrowser.open_new(urls["website"])
+            webbrowser.open_new(urls["website"])
             print("Website")
         elif 1170 <= mouse_x <= 1206 and 730 <= mouse_y <= 760:
-            # webbrowser.open_new(urls["linkedin"])
+            webbrowser.open_new(urls["linkedin"])
             print("Linkedin")
         elif 1236 <= mouse_x <= 1272 and 730 <= mouse_y <= 760:
-            # webbrowser.open_new(urls["email"])
+            webbrowser.open_new(urls["email"])
             print("Email")
         elif 906 <= mouse_x <= 1114 and 572 <= mouse_y <= 614:
             root.destroy()
@@ -198,21 +198,6 @@ def registrationUI(user_name=""):
     #     except Exception:
     #         print("Failed Log out")
     #         logging.exception(Exception)
-
-    logout_button = Button(root,
-                           bg="white",
-                           text="Log out",
-                           border=0,
-                           font=("Quicksand Bold", 6),
-                           activebackground="#CBC9FE",
-                           foreground="black",
-                           command=""
-                           )
-    logout_button.place(x=28,
-                        y=492,
-                        width=32,
-                        height=12
-                        )
 
     # Run App
     root.mainloop()
