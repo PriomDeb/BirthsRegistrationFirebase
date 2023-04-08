@@ -9,6 +9,7 @@ import webbrowser
 from database_manage import set_data, push_data
 import tkinter as tk
 from tkinter import ttk
+import database_manage
 
 
 # Adding fonts
@@ -47,40 +48,41 @@ def home_ui(user_name=""):
     bg_canvas.pack(fill=BOTH, expand=True)
     bg_canvas.create_image(0, 0, image=resized_main_ui, anchor="nw")
 
-    data = [{"name": "Tom", "Birth": "-------------------"},
-            {"name": "Robert", "Birth": "12 January, 2023"},
-            {"name": "Tom", "Birth": "02 January, 2023"},
-            {"name": "Robert", "Birth": "12 January, 2023"},
-            {"name": "Tom", "Birth": "02 January, 2023"},
-            {"name": "Robert", "Birth": "12 January, 2023"},
-            {"name": "Tom", "Birth": "02 January, 2023"},
-            {"name": "Robert", "Birth": "12 January, 2023"},
-            {"name": "Tom", "Birth": "02 January, 2023"},
-            {"name": "Robert", "Birth": "12 January, 2023"},
-            {"name": "Tom", "Birth": "02 January, 2023"},
-            {"name": "Robert", "Birth": "12 January, 2023"},
-            {"name": "Tom", "Birth": "02 January, 2023"},
-            {"name": "Robert", "Birth": "12 January, 2023"},
-            {"name": "Tom", "Birth": "02 January, 2023"},
-            {"name": "Robert", "Birth": "12 January, 2023"},
-            {"name": "Tom", "Birth": "02 January, 2023"},
-            {"name": "Robert", "Birth": "12 January, 2023"},
-            {"name": "Tom", "Birth": "02 January, 2023"},
-            {"name": "Robert", "Birth": "12 January, 2023"},
-            {"name": "Tom", "Birth": "02 January, 2023"},
-            {"name": "Tom", "Birth": "02 January, 2023"},
-            {"name": "Robert", "Birth": "12 January, 2023"},
-            {"name": "Tom", "Birth": "02 January, 2023"},
-            {"name": "Robert", "Birth": "12 January, 2023"},
-            {"name": "Tom", "Birth": "02 January, 2023"},
-            {"name": "Robert", "Birth": "12 January, 2023"},
-            {"name": "Tom", "Birth": "02 January, 2023"},
-            {"name": "Robert", "Birth": "12 January, 2023"},
-            {"name": "Tom", "Birth": "02 January, 2023"},
-            {"name": "Robert", "Birth": "12 January, 2023"},
-            {"name": "Tom", "Birth": "02 January, 2023"},
-            {"name": "Robert", "Birth": "-------------"},
-            ]
+    # data = [{"name": "Tom", "Birth": "-------------------"},
+    #         {"name": "Robert", "Birth": "12 January, 2023"},
+    #         {"name": "Tom", "Birth": "02 January, 2023"},
+    #         {"name": "Robert", "Birth": "12 January, 2023"},
+    #         {"name": "Tom", "Birth": "02 January, 2023"},
+    #         {"name": "Robert", "Birth": "12 January, 2023"},
+    #         {"name": "Tom", "Birth": "02 January, 2023"},
+    #         {"name": "Robert", "Birth": "12 January, 2023"},
+    #         {"name": "Tom", "Birth": "02 January, 2023"},
+    #         {"name": "Robert", "Birth": "12 January, 2023"},
+    #         {"name": "Tom", "Birth": "02 January, 2023"},
+    #         {"name": "Robert", "Birth": "12 January, 2023"},
+    #         {"name": "Tom", "Birth": "02 January, 2023"},
+    #         {"name": "Robert", "Birth": "12 January, 2023"},
+    #         {"name": "Tom", "Birth": "02 January, 2023"},
+    #         {"name": "Robert", "Birth": "12 January, 2023"},
+    #         {"name": "Tom", "Birth": "02 January, 2023"},
+    #         {"name": "Robert", "Birth": "12 January, 2023"},
+    #         {"name": "Tom", "Birth": "02 January, 2023"},
+    #         {"name": "Robert", "Birth": "12 January, 2023"},
+    #         {"name": "Tom", "Birth": "02 January, 2023"},
+    #         {"name": "Tom", "Birth": "02 January, 2023"},
+    #         {"name": "Robert", "Birth": "12 January, 2023"},
+    #         {"name": "Tom", "Birth": "02 January, 2023"},
+    #         {"name": "Robert", "Birth": "12 January, 2023"},
+    #         {"name": "Tom", "Birth": "02 January, 2023"},
+    #         {"name": "Robert", "Birth": "12 January, 2023"},
+    #         {"name": "Tom", "Birth": "02 January, 2023"},
+    #         {"name": "Robert", "Birth": "12 January, 2023"},
+    #         {"name": "Tom", "Birth": "02 January, 2023"},
+    #         {"name": "Robert", "Birth": "12 January, 2023"},
+    #         {"name": "Tom", "Birth": "02 January, 2023"},
+    #         {"name": "Robert", "Birth": "-------------"},
+    #         ]
+    data = database_manage.retrieve_all_data()
 
     # create the container frame for the cards
     container_frame = Frame(root, background="white")
@@ -92,8 +94,8 @@ def home_ui(user_name=""):
                           width=750,
                           height=604)
 
-    scrollbar = Scrollbar(container_frame, orient="vertical", command=bg_canvas.yview)
-    scrollbar.pack(side="right", fill="y")
+    # scrollbar = Scrollbar(container_frame, orient="vertical", command=bg_canvas.yview)
+    # scrollbar.pack(side="right", fill="y")
 
     # add the cards to the container frame
     for i, d in enumerate(data):
@@ -107,7 +109,7 @@ def home_ui(user_name=""):
         name_label.pack(side="top", anchor="w")
 
         birth_label = Label(card,
-                            text="Birth: " + d["Birth"],
+                            text="Birth: " + d["date_of_birth"],
                             font=("Quicksand", 10),
                             )
         birth_label.pack(side="top", anchor="w")

@@ -8,6 +8,18 @@ firebase = initialize()
 db = firebase.database()
 
 
+def get_all_ids():
+    """
+    Get all the birth registration ids.
+    :return: List of all ids in integer
+    """
+    ids = db.child("births").shallow().get().val()
+    ids = list(ids)
+    ids = [int(i) for i in ids]
+    ids.sort()
+    return ids
+
+
 def set_data(name,
              date_of_birth,
              father_name,
@@ -49,32 +61,27 @@ def push_data(root="births", data=None):
 
 # push_data(data={"name": "n1", "age": "10"})
 
-
-def retrieve_all_data():
-    child_keys = db.child("births").shallow().get().val()
-    rows = [db.child("births").child(child_key).get().val() for child_key in child_keys]
-    data_list = [{**row} for row in rows]
-    return data_list
-
 def get_data_by_child_id(child_id):
     data = db.child("births").child(f"{child_id}").get().val()
     return data
+
+def retrieve_all_data():
+    # child_keys = db.child("births").shallow().get().val()
+    # rows = [db.child("births").child(child_key).get().val() for child_key in child_keys]
+    # data_list = [{**row} for row in rows]
+
+    ids = get_all_ids()
+    data_list = [get_data_by_child_id(i) for i in ids]
+
+    return data_list
+
 
 def update_data(root="births", child_id=None, data=None):
     current_data = get_data_by_child_id(child_id)
 
     db.child(root).child(f"{child_id}").set(data)
 
-def get_all_ids():
-    """
-    Get all the birth registration ids.
-    :return: List of all ids in integer
-    """
-    ids = db.child("births").shallow().get().val()
-    ids = list(ids)
-    ids = [int(i) for i in ids]
-    ids.sort()
-    return ids
+
 
 
 
