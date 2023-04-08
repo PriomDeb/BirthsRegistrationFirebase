@@ -14,6 +14,7 @@ import home
 # Adding fonts
 pyglet.font.add_file("fonts/Quicksand_Bold.otf")
 
+
 def set_retrieved_data(data, key):
     global fetched_data
     global id
@@ -75,16 +76,19 @@ def edit_information(user_name=""):
     date_of_birth = text_field(x=66 + 554, y=146, width=484, height=40, default_text=f"{fetched_data['date_of_birth']}")
 
     address = text_field(x=66, y=146 + 114, width=484, height=40, default_text=f"{fetched_data['address']}")
-    birth_location = text_field(x=66 + 554, y=146 + 114, width=484, height=40, default_text=f"{fetched_data['birth_location']}")
+    birth_location = text_field(x=66 + 554, y=146 + 114, width=484, height=40,
+                                default_text=f"{fetched_data['birth_location']}")
 
     father_name = text_field(x=66, y=146 + 114 * 2, width=484, height=40, default_text=f"{fetched_data['father_name']}")
-    mother_name = text_field(x=66 + 554, y=146 + 114 * 2, width=484, height=40, default_text=f"{fetched_data['mother_name']}")
+    mother_name = text_field(x=66 + 554, y=146 + 114 * 2, width=484, height=40,
+                             default_text=f"{fetched_data['mother_name']}")
 
     guardian_contact_number = text_field(x=66, y=146 + 114 * 3, width=484, height=40,
                                          default_text=f"{fetched_data['guardian_contact_number']}")
-    guardian_nid = text_field(x=66 + 554, y=146 + 114 * 3, width=484, height=40, default_text=f"{fetched_data['guardian_nid']}")
+    guardian_nid = text_field(x=66 + 554, y=146 + 114 * 3, width=484, height=40,
+                              default_text=f"{fetched_data['guardian_nid']}")
 
-
+    Label(text=f"Child ID: {id}", background="white", font=("Quicksand Bold", 14)).place(x=100, y=70)
 
     def upload_data():
         data = set_data(name=name.get("1.0", "end-1c"),
@@ -101,8 +105,6 @@ def edit_information(user_name=""):
         if status:
             root.destroy()
             home.call()
-
-
 
     def mousePosition(mouse_xy):
         mouse_x = mouse_xy.x
@@ -201,6 +203,3 @@ def call():
 
 if __name__ == "__main__":
     call()
-
-
-

@@ -50,8 +50,8 @@ def home_ui(user_name=""):
     bg_canvas.pack(fill=BOTH, expand=True)
     bg_canvas.create_image(0, 0, image=resized_main_ui, anchor="nw")
 
-
     data = database_manage.retrieve_all_data()
+
     # data = joblib.load("data")
 
     def card_buttons(key):
@@ -99,6 +99,18 @@ def home_ui(user_name=""):
                             font=("Quicksand", 10),
                             )
         birth_label.pack(side="top", anchor="w")
+
+        address = Label(card,
+                        text="Address: " + data[i]["address"],
+                        font=("Quicksand", 10),
+                        )
+        address.pack(side="top", anchor="w")
+
+        guardian_contact_number = Label(card,
+                                        text="Number: " + data[i]["guardian_contact_number"],
+                                        font=("Quicksand", 10),
+                                        )
+        guardian_contact_number.pack(side="top", anchor="w")
 
         # Load the edit icon image
         # edit_icon = tk.PhotoImage(file="ui/edit.png")
