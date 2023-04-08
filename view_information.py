@@ -6,10 +6,11 @@ from PIL import Image, ImageTk
 from tkinter import scrolledtext
 import pyglet
 import webbrowser
-
 import database_manage
 from database_manage import set_data, push_data
 import home
+import birth_certificate_generator
+import os
 
 # Adding fonts
 pyglet.font.add_file("fonts/Quicksand_Bold.otf")
@@ -56,11 +57,11 @@ def view_information(user_name=""):
 
     def text_field(x, y, width, height, default_text="Enter your text here"):
         text = Label(root,
-                    bg="white",
-                    border=0,
-                    highlightthickness=0,
-                    font=("Quicksand Book", 14),
-                    )
+                     bg="white",
+                     border=0,
+                     highlightthickness=0,
+                     font=("Quicksand Book", 14),
+                     )
 
         text.pack()
         text.place(x=x,
@@ -91,20 +92,15 @@ def view_information(user_name=""):
     Label(text=f"Child ID: {id}", background="white", font=("Quicksand Bold", 14)).place(x=100, y=70)
 
     def upload_data():
-        data = set_data(name=name.get("1.0", "end-1c"),
-                        date_of_birth=date_of_birth.get("1.0", "end-1c"),
-                        address=address.get("1.0", "end-1c"),
-                        birth_location=birth_location.get("1.0", "end-1c"),
-                        father_name=father_name.get("1.0", "end-1c"),
-                        mother_name=mother_name.get("1.0", "end-1c"),
-                        guardian_contact_number=guardian_contact_number.get("1.0", "end-1c"),
-                        guardian_nid=guardian_nid.get("1.0", "end-1c")
-                        )
-
-        status = database_manage.update_data(data=data, child_id=id)
+        status = birth_certificate_generator.generate_birth_certificate(name=fetched_data['name'],
+                                                                        father_name=fetched_data['father_name'],
+                                                                        mother_name=fetched_data['mother_name'],
+                                                                        date_of_birth=fetched_data['date_of_birth'],
+                                                                        birth_location=fetched_data['birth_location'],
+                                                                        key=id
+                                                                        )
         if status:
-            root.destroy()
-            home.call()
+            os.startfile(os.path.abspath("Birth_Certificates"))
 
     def mousePosition(mouse_xy):
         mouse_x = mouse_xy.x
@@ -122,6 +118,7 @@ def view_information(user_name=""):
 
         if 614 <= mouse_x <= 904 and 570 <= mouse_y <= 614:
             print("Birth Certificate")
+            upload_data()
             # upload_data()
             # print(name.get("1.0", "end-1c"))
             # print(date_of_birth.get("1.0", "end-1c"))
@@ -189,40 +186,3 @@ def call():
 
 if __name__ == "__main__":
     call()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
