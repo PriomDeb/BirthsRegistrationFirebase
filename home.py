@@ -10,6 +10,7 @@ from database_manage import set_data, push_data
 import tkinter as tk
 from tkinter import ttk
 import database_manage
+import joblib
 
 # Adding fonts
 pyglet.font.add_file("fonts/Quicksand_Bold.otf")
@@ -76,7 +77,13 @@ def home_ui(user_name=""):
             {"name": "Robert", "date_of_birth": "12 January, 2023"},
             {"name": "Robert", "date_of_birth": "-----------------"},
             ]
+
+    # def data_and_keys():
     # data = database_manage.retrieve_all_data()
+    data = joblib.load("data")
+
+    def card_buttons(function):
+        print(function)
 
     # create the container frame for the cards
     container_frame = Frame(root, background="white")
@@ -92,7 +99,7 @@ def home_ui(user_name=""):
     scrollbar.pack(side="right", fill="y")
 
     # add the cards to the container frame
-    for i, d in enumerate(data):
+    for i in data:
         card = Frame(container_frame, highlightbackground="black", highlightthickness=0, bd=1)
         card.pack(side="top",
                   fill="x",
@@ -101,13 +108,13 @@ def home_ui(user_name=""):
                   )
 
         name_label = Label(card,
-                           text="Name: " + d["name"],
+                           text="Name: " + data[i]["name"],
                            font=("Quicksand", 10),
                            )
         name_label.pack(side="top", anchor="w")
 
         birth_label = Label(card,
-                            text="Birth: " + d["date_of_birth"],
+                            text="Birth: " + data[i]["date_of_birth"],
                             font=("Quicksand", 10),
                             )
         birth_label.pack(side="top", anchor="w")
@@ -115,11 +122,8 @@ def home_ui(user_name=""):
         # Load the edit icon image
         # edit_icon = tk.PhotoImage(file="ui/edit.png")
 
-        edit_button = tk.Button(card, text="Edit", compound="left")
-        edit_button.pack(side=RIGHT)
-
-        edit_button = tk.Button(card, text="Edit", compound="left")
-        edit_button.pack(side=RIGHT)
+        tk.Button(card, text="Edit", compound="left",
+                  command=lambda i=i: card_buttons(i), borderwidth=1, highlightthickness=0).pack(side=RIGHT)
 
     def mousePosition(mouse_xy):
         mouse_x = mouse_xy.x
@@ -133,7 +137,7 @@ def home_ui(user_name=""):
                 "email": "mailto:priom@priomdeb.com"
                 }
 
-        print(f"x:{mouse_x}, y:{mouse_y}")
+        # print(f"x:{mouse_x}, y:{mouse_y}")
 
         if 670 <= mouse_x <= 880 and 572 <= mouse_y <= 618:
             pass
