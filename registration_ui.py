@@ -168,7 +168,7 @@ def registrationUI(user_name=""):
     if len(user_name) > 32:
         font_size = 8
 
-   
+
 
     # Run App
     root.mainloop()
