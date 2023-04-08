@@ -16,6 +16,7 @@ import edit_ui
 import images
 import storage_manage
 import os
+import view_information
 
 # Adding fonts
 pyglet.font.add_file("fonts/Quicksand_Bold.otf")
@@ -62,6 +63,12 @@ def home_ui(user_name=""):
         edit_ui.set_retrieved_data(fetch_data, key)
         root.destroy()
         edit_ui.call()
+
+    def show_information(key):
+        fetch_data = database_manage.get_data_by_child_id(key)
+        view_information.set_retrieved_data(fetch_data, key)
+        root.destroy()
+        view_information.call()
 
     # create the container frame for the cards
     container_frame = Frame(root, background="white")
@@ -119,7 +126,9 @@ def home_ui(user_name=""):
         edit_icon = tk.PhotoImage(file="ui/edit.png")
 
         tk.Button(card, text="Edit", compound="left",
-                  command=lambda i=i: card_buttons(i), borderwidth=1, highlightthickness=0).pack(side=RIGHT)
+                  command=lambda i=i: card_buttons(i), borderwidth=1, highlightthickness=0, bd=0, bg="#F0A3E7").pack(side=RIGHT)
+        tk.Button(card, text="View", compound="left",
+                  command=lambda i=i: show_information(i), borderwidth=1, highlightthickness=0, bd=0, bg="#F0A3C7").pack(side=RIGHT, padx=10)
 
     def mousePosition(mouse_xy):
         mouse_x = mouse_xy.x
