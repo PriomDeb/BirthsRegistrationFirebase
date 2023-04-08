@@ -11,6 +11,8 @@ import tkinter as tk
 from tkinter import ttk
 import database_manage
 import joblib
+import registration_ui
+import edit_ui
 
 # Adding fonts
 pyglet.font.add_file("fonts/Quicksand_Bold.otf")
@@ -82,8 +84,9 @@ def home_ui(user_name=""):
     # data = database_manage.retrieve_all_data()
     data = joblib.load("data")
 
-    def card_buttons(function):
-        print(function)
+    def card_buttons(key):
+        fetch_data = database_manage.get_data_by_child_id(key)
+        print(fetch_data["name"])
 
     # create the container frame for the cards
     container_frame = Frame(root, background="white")
@@ -137,10 +140,11 @@ def home_ui(user_name=""):
                 "email": "mailto:priom@priomdeb.com"
                 }
 
-        # print(f"x:{mouse_x}, y:{mouse_y}")
+        print(f"x:{mouse_x}, y:{mouse_y}")
 
-        if 670 <= mouse_x <= 880 and 572 <= mouse_y <= 618:
-            pass
+        if 14 <= mouse_x <= 272 and 246 <= mouse_y <= 356:
+            root.destroy()
+            registration_ui.call()
         elif 770 <= mouse_x <= 780 and 20 <= mouse_y <= 30:
             print("Exit")
             # root.destroy()
@@ -185,4 +189,6 @@ def call():
     home_ui()
 
 
-call()
+if __name__ == "__main__":
+    call()
+

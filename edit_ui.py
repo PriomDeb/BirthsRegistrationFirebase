@@ -12,8 +12,13 @@ import home
 # Adding fonts
 pyglet.font.add_file("fonts/Quicksand_Bold.otf")
 
+def set_retrieved_data(data):
+    global fetched_data
 
-def registrationUI(user_name=""):
+    fetched_data = data
+
+
+def edit_information(user_name=""):
     global root
     root = Tk()
     version = "1.1"
@@ -165,37 +170,6 @@ def registrationUI(user_name=""):
     if len(user_name) > 32:
         font_size = 8
 
-    display_name = f"Hi, {user_name}!"
-    # draw_display_name = Label(root,
-    #                           text=display_name,
-    #                           border=0,
-    #                           font=("Quicksand Bold", font_size),
-    #                           foreground="orange",
-    #                           )
-    # draw_display_name.place(x=230,
-    #                         y=40,
-    #                         width=302,
-    #                         height=40
-    #                         )
-    # bg_canvas.create_text(374,
-    #                       58,
-    #                       text=display_name,
-    #                       font=("Quicksand Bold", font_size),
-    #                       fill="orange",
-    #                       justify=CENTER,
-    #                       )
-
-    # Log out
-    # def logout():
-    #     try:
-    #         user = PriomFirebaseAuthenticationAPI()
-    #         root.destroy()
-    #         user.logout()
-    #         authentication_to_enter_the_app()
-    #     except Exception:
-    #         print("Failed Log out")
-    #         logging.exception(Exception)
-
     logout_button = Button(root,
                            bg="white",
                            text="Log out",
@@ -216,35 +190,11 @@ def registrationUI(user_name=""):
 
 
 def call():
-    registrationUI()
+    edit_information()
 
 
 if __name__ == "__main__":
     call()
 
 
-# priom_firebase = PriomFirebaseAuthenticationAPI()
 
-# def authentication_to_enter_the_app():
-#     read_authentication = priom_firebase.check_authentication()
-#     uui, display_name, signed_in = read_authentication
-#
-#     if not signed_in:
-#         login = DiskaouLogin()
-#         login.drawLogin()
-#
-#         if login.authentication_success and login.authentication_email_verified and login.authentication_correct_email_password:
-#             read_name = priom_firebase.check_authentication()
-#             ezTranslationStart(read_name[1])
-#     else:
-#         ezTranslationStart(display_name)
-#
-#
-# authentication_to_enter_the_app()
-
-
-# pyinstaller --onefile --icon=ezTranslationIcon.ico -w eztranslationv1_1.py
-
-
-# translated_text.delete("1.0", END)
-# get_source_text = source_text.get("1.0", "end-1c")
