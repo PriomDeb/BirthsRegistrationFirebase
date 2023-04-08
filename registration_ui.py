@@ -7,6 +7,7 @@ from tkinter import scrolledtext
 import pyglet
 import webbrowser
 from database_manage import set_data, push_data
+import home
 
 # Adding fonts
 pyglet.font.add_file("fonts/Quicksand_Bold.otf")
@@ -143,6 +144,9 @@ def ezTranslationStart(user_name=""):
         elif 1236 <= mouse_x <= 1272 and 730 <= mouse_y <= 760:
             # webbrowser.open_new(urls["email"])
             print("Email")
+        elif 906 <= mouse_x <= 1114 and 572 <= mouse_y <= 614:
+            root.destroy()
+            home.call()
 
     root.bind("<Button 1>", mousePosition)
 
@@ -173,13 +177,13 @@ def ezTranslationStart(user_name=""):
     #                         width=302,
     #                         height=40
     #                         )
-    bg_canvas.create_text(374,
-                          58,
-                          text=display_name,
-                          font=("Quicksand Bold", font_size),
-                          fill="white",
-                          justify=CENTER,
-                          )
+    # bg_canvas.create_text(374,
+    #                       58,
+    #                       text=display_name,
+    #                       font=("Quicksand Bold", font_size),
+    #                       fill="orange",
+    #                       justify=CENTER,
+    #                       )
 
     # Log out
     # def logout():
