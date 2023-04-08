@@ -73,7 +73,9 @@ def retrieve_all_data():
     ids = get_all_ids()
     data_list = [get_data_by_child_id(i) for i in ids]
 
-    return data_list
+    data_with_key = {id: data for id, data in zip(ids, data_list)}
+
+    return data_with_key
 
 
 def update_data(root="births", child_id=None, data=None):
