@@ -57,13 +57,27 @@ def retrieve_all_data():
     return data_list
 
 def get_data_by_child_id(child_id):
-    data = db.child("births").child(child_id).get().val()
+    data = db.child("births").child(f"{child_id}").get().val()
     return data
 
 def update_data(root="births", child_id=None, data=None):
     current_data = get_data_by_child_id(child_id)
 
     db.child(root).child(f"{child_id}").set(data)
+
+def get_all_ids():
+    """
+    Get all the birth registration ids.
+    :return: List of all ids in integer
+    """
+    ids = db.child("births").shallow().get().val()
+    ids = list(ids)
+    ids = [int(i) for i in ids]
+    ids.sort()
+    return ids
+
+
+
 
 
 # update_data(child_id=1, data={"name": "name1",

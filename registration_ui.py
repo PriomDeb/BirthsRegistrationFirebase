@@ -213,6 +213,7 @@ def ezTranslationStart(user_name=""):
 
 ezTranslationStart()
 
+
 # priom_firebase = PriomFirebaseAuthenticationAPI()
 
 # def authentication_to_enter_the_app():
