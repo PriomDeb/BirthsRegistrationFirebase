@@ -89,7 +89,10 @@ def registrationUI(user_name=""):
                         guardian_nid=guardian_nid.get("1.0", "end-1c")
                         )
 
-        push_data(data=data)
+        status = push_data(data=data)
+        if status:
+            root.destroy()
+            home.call()
 
 
 

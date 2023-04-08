@@ -58,6 +58,8 @@ def push_data(root="births", data=None):
     last_child_id += 1
     db.child(root).child(f"{last_child_id}").set(data)
 
+    return True
+
 
 # push_data(data={"name": "n1", "age": "10"})
 
@@ -79,9 +81,10 @@ def retrieve_all_data():
 
 
 def update_data(root="births", child_id=None, data=None):
-    current_data = get_data_by_child_id(child_id)
+    # current_data = get_data_by_child_id(child_id)
 
     db.child(root).child(f"{child_id}").set(data)
+    return True
 
 
 

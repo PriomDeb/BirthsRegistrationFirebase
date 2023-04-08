@@ -6,16 +6,19 @@ from PIL import Image, ImageTk
 from tkinter import scrolledtext
 import pyglet
 import webbrowser
+
+import database_manage
 from database_manage import set_data, push_data
 import home
 
 # Adding fonts
 pyglet.font.add_file("fonts/Quicksand_Bold.otf")
 
-def set_retrieved_data(data):
+def set_retrieved_data(data, key):
     global fetched_data
+    global id
 
-    fetched_data = data
+    fetched_data, id = data, key
 
 
 def edit_information(user_name=""):
@@ -68,18 +71,18 @@ def edit_information(user_name=""):
         text.insert(INSERT, default_text)
         return text
 
-    name = text_field(x=66, y=146, width=484, height=40, default_text="Name")
-    date_of_birth = text_field(x=66 + 554, y=146, width=484, height=40, default_text="Date of Birth")
+    name = text_field(x=66, y=146, width=484, height=40, default_text=f"{fetched_data['name']}")
+    date_of_birth = text_field(x=66 + 554, y=146, width=484, height=40, default_text=f"{fetched_data['date_of_birth']}")
 
-    address = text_field(x=66, y=146 + 114, width=484, height=40, default_text="Address")
-    birth_location = text_field(x=66 + 554, y=146 + 114, width=484, height=40, default_text="Birth Location")
+    address = text_field(x=66, y=146 + 114, width=484, height=40, default_text=f"{fetched_data['address']}")
+    birth_location = text_field(x=66 + 554, y=146 + 114, width=484, height=40, default_text=f"{fetched_data['birth_location']}")
 
-    father_name = text_field(x=66, y=146 + 114 * 2, width=484, height=40, default_text="Father Name")
-    mother_name = text_field(x=66 + 554, y=146 + 114 * 2, width=484, height=40, default_text="Mother Name")
+    father_name = text_field(x=66, y=146 + 114 * 2, width=484, height=40, default_text=f"{fetched_data['father_name']}")
+    mother_name = text_field(x=66 + 554, y=146 + 114 * 2, width=484, height=40, default_text=f"{fetched_data['mother_name']}")
 
     guardian_contact_number = text_field(x=66, y=146 + 114 * 3, width=484, height=40,
-                                         default_text="Guardian Contact Number")
-    guardian_nid = text_field(x=66 + 554, y=146 + 114 * 3, width=484, height=40, default_text="Guardian NID")
+                                         default_text=f"{fetched_data['guardian_contact_number']}")
+    guardian_nid = text_field(x=66 + 554, y=146 + 114 * 3, width=484, height=40, default_text=f"{fetched_data['guardian_nid']}")
 
 
 
@@ -94,7 +97,10 @@ def edit_information(user_name=""):
                         guardian_nid=guardian_nid.get("1.0", "end-1c")
                         )
 
-        push_data(data=data)
+        status = database_manage.update_data(data=data, child_id=id)
+        if status:
+            root.destroy()
+            home.call()
 
 
 

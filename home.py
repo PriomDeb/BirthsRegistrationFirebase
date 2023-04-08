@@ -50,43 +50,15 @@ def home_ui(user_name=""):
     bg_canvas.pack(fill=BOTH, expand=True)
     bg_canvas.create_image(0, 0, image=resized_main_ui, anchor="nw")
 
-    data = [{"name": "Robert", "date_of_birth": "----------------"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "12 January, 2023"},
-            {"name": "Robert", "date_of_birth": "-----------------"},
-            ]
 
-    # def data_and_keys():
-    # data = database_manage.retrieve_all_data()
-    data = joblib.load("data")
+    data = database_manage.retrieve_all_data()
+    # data = joblib.load("data")
 
     def card_buttons(key):
         fetch_data = database_manage.get_data_by_child_id(key)
-        print(fetch_data["name"])
+        edit_ui.set_retrieved_data(fetch_data, key)
+        root.destroy()
+        edit_ui.call()
 
     # create the container frame for the cards
     container_frame = Frame(root, background="white")
@@ -109,6 +81,12 @@ def home_ui(user_name=""):
                   padx=10,
                   pady=5,
                   )
+
+        key = Label(card,
+                    text=f"Child ID: {i}",
+                    font=("Quicksand", 10),
+                    )
+        key.pack(side="top", anchor="w")
 
         name_label = Label(card,
                            text="Name: " + data[i]["name"],
@@ -191,4 +169,3 @@ def call():
 
 if __name__ == "__main__":
     call()
-
