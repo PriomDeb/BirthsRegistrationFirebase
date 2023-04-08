@@ -211,28 +211,5 @@ if __name__ == "__main__":
     call()
 
 
-# priom_firebase = PriomFirebaseAuthenticationAPI()
-
-# def authentication_to_enter_the_app():
-#     read_authentication = priom_firebase.check_authentication()
-#     uui, display_name, signed_in = read_authentication
-#
-#     if not signed_in:
-#         login = DiskaouLogin()
-#         login.drawLogin()
-#
-#         if login.authentication_success and login.authentication_email_verified and login.authentication_correct_email_password:
-#             read_name = priom_firebase.check_authentication()
-#             ezTranslationStart(read_name[1])
-#     else:
-#         ezTranslationStart(display_name)
-#
-#
-# authentication_to_enter_the_app()
-
-
 # pyinstaller --onefile --icon=birth_registration_icon.ico -w home.py
 
-
-# translated_text.delete("1.0", END)
-# get_source_text = source_text.get("1.0", "end-1c")
