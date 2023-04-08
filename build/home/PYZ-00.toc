@@ -1616,6 +1616,10 @@
    'd:\\github repo\\github public repo\\my open source '
    'projects\\python\\birthsregistrationfirebase\\venv\\lib\\site-packages\\idna\\uts46data.py',
    'PYMODULE'),
+  ('images',
+   'D:\\GitHub Repo\\GitHub Public Repo\\My Open Source '
+   'Projects\\Python\\BirthsRegistrationFirebase\\images.py',
+   'PYMODULE'),
   ('imp',
    'C:\\Users\\priom\\AppData\\Local\\Programs\\Python\\Python39\\lib\\imp.py',
    'PYMODULE'),
@@ -4051,6 +4055,10 @@
    'PYMODULE'),
   ('statistics',
    'C:\\Users\\priom\\AppData\\Local\\Programs\\Python\\Python39\\lib\\statistics.py',
+   'PYMODULE'),
+  ('storage_manage',
+   'D:\\GitHub Repo\\GitHub Public Repo\\My Open Source '
+   'Projects\\Python\\BirthsRegistrationFirebase\\storage_manage.py',
    'PYMODULE'),
   ('string',
    'C:\\Users\\priom\\AppData\\Local\\Programs\\Python\\Python39\\lib\\string.py',
